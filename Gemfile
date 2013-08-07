@@ -8,6 +8,7 @@ gem 'rails', '3.2.13'
 gem 'pg'
 gem 'dotenv-rails'
 gem 'haml-rails'
+gem 'thin'
 gem 'backbone-on-rails'
 
 

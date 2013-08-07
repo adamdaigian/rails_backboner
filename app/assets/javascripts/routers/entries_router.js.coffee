@@ -3,11 +3,15 @@ class Backboner.Routers.Entries extends Backbone.Router
 		'': 'index'
 		'entries/:id': 'show'
 
+	initialize: ->
+		@collection = new Backboner.Collections.Entries()
+		@collection.fetch({reset: true})
+
 	index: ->
-		view = new Backboner.Views.EntriesIndex()
+		view = new Backboner.Views.EntriesIndex(collection: @collection)
 		$('#container').html(view.render().el)
 
 	show: (id) ->
-		# alert "Entry #{id}"
+		alert "Entry #{id}"
 
 
