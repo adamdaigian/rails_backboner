@@ -1,3 +1,6 @@
 class Backboner.Collections.Entries extends Backbone.Collection
 
-  model: Backboner.Models.Entry
+  url: 'api/entries'
+  # GET /entries
+  # POST /entries
+  # GET /entries ect

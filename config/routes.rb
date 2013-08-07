@@ -1,4 +1,14 @@
 Backboner::Application.routes.draw do
-  root to: "main#index"
+
+  resources :entries
+
+
+resources :entries
+
+# scope "api" do
+#   resources :entries
+# end
+
+root to: "main#index"
 
 end

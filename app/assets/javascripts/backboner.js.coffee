@@ -3,9 +3,9 @@ window.Backboner =
   Collections: {}
   Views: {}
   Routers: {}
-  initialize: -> 
-  	new Backboner.Routers.Entries()
-  	Backbone.history.start()
+  init: ->
+    new Backboner.Routers.Entries()
+    Backbone.history.start()
 
 $(document).ready ->
-  Backboner.initialize()
+  Backboner.init()

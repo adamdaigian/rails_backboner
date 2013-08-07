@@ -1,0 +1,3 @@
+<h1>Backboner</h1>
+
+<%= @entries %>
